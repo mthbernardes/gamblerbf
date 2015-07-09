@@ -12,7 +12,6 @@ def back():
 	else:
 		print 'SyntaxError, please provide y or n'
 		back()
-		r = ''
 		
 def login_password():
 	r = raw_input('Do you want to use default user/password file?(y/n)')
@@ -105,7 +104,6 @@ def menu():
 	elif r == '3':
 		exit()
 	else:
-		r = ''
 		os.system('clear')
 		print 'SyntaxError please provide a validy option'
 		menu()
