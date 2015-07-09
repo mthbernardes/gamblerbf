@@ -16,8 +16,8 @@ def back():
 def login_password():
 	r = raw_input('Do you want to use default user/password file?(y/n)')
 	if r == 'y' or r == 'Y':
-		senha_f		= open('wordlist/password.txt','r')
-		usuario_f	= open('wordlist/user.txt','r')
+		senha_f		= open('wordlist/c_password.txt','r')
+		usuario_f	= open('wordlist/c_user.txt','r')
 		senha_r		= senha_f.read().splitlines()
 		usuario_r	= usuario_f.read().splitlines()
 		return senha_r,usuario_r
